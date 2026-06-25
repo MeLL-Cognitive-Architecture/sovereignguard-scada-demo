@@ -25,4 +25,4 @@ O arquivo principal é um componente desenvolvido em **React** com **Tailwind CS
 3. Importe o componente `terminal_industrial_sovereignguard.tsx` na sua página principal.
 
 ---
-*Projeto desenvolvido por Luiz Carlos Rezende (Arquiteto na MeLL Cognitive Architecture).*
+*Projeto desenvolvido por Luiz Carlos Rezende (Arquiteto na MeLL Cognitive Architecture).* 
