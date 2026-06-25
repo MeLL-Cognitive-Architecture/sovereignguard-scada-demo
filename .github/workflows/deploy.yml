@@ -1,0 +1,41 @@
+name: Deploy React/Vite to GitHub Pages
+
+on:
+  push:
+    branches: ['main'] # ou 'master', dependendo de como chama sua branch principal
+
+# Permissões necessárias para o GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: Instalar Dependências
+        run: npm install
+        
+      - name: Compilar o Projeto (Build)
+        run: npm run build
+        
+      - name: Fazer upload dos artefatos
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+          
+      - name: Fazer Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
