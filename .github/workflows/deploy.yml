@@ -1,4 +1,5 @@
-name: Deploy React/Vite to GitHub Pages
+name: - name: Checkout
+  uses: actions/checkout@v7.0.0
 
 on:
   push:
@@ -39,3 +40,4 @@ jobs:
       - name: Fazer Deploy no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
