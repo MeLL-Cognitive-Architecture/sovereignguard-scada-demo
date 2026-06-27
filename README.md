@@ -2,7 +2,7 @@
 
 Demonstração de interface SCADA híbrida (CLP + IA) desenvolvida originalmente para a iniciativa **Google I/O 2026 (Code the Countdown)**. 
 
-[cite_start]Este projeto ilustra a aplicação prática da **Arquitetura Cognitiva MeLL**, onde a Inteligência Artificial opera em paralelo a sistemas industriais determinísticos, garantindo rastreabilidade, segurança regulatória e soberania humana em ambientes críticos[cite: 4, 5, 6].
+Este projeto ilustra a aplicação prática da **Arquitetura Cognitiva MeLL**, onde a Inteligência Artificial opera em paralelo a sistemas industriais determinísticos, garantindo rastreabilidade, segurança regulatória e soberania humana em ambientes críticos.
 
 ## 🚀 Demonstração ao Vivo
 O projeto está compilado e hospedado nativamente no GitHub Pages. Acesse a interface operacional pelo link abaixo:
@@ -12,9 +12,9 @@ O projeto está compilado e hospedado nativamente no GitHub Pages. Acesse a inte
 
 ## 🛡️ Princípios de Engenharia Aplicados
 
-* [cite_start]**Conformidade ISA-101 (High-Performance HMI):** Interface de alto desempenho projetada com fundo cinza neutro para redução de fadiga ocular, uso de *flat design* (sem gradientes ou elementos 3D decorativos) e aplicação estrita de cores (Cores Ativas) apenas para sinalização de alarmes ou advertências[cite: 8, 10, 11, 12, 61].
+**Conformidade ISA-101 (High-Performance HMI):** Interface de alto desempenho projetada com fundo cinza neutro para redução de fadiga ocular, uso de *flat design* (sem gradientes ou elementos 3D decorativos) e aplicação estrita de cores (Cores Ativas) apenas para sinalização de alarmes ou advertências.
 * **Governança de IA (CIA-Tec™ v5.0):** Camada de Inteligência Artificial atuando estritamente em Modo Paralelo como supervisora cognitiva de indicadores PCM (Planejamento e Controle de Manutenção), monitorando tendências de **MTBF** (Tempo Médio Entre Falhas) e **Backlog** sem interferir no determinismo de baixo nível (CLP).
-* **Segurança e Intervencionismo Humano (NR-10 & ISA-99):** Interlock de segurança ativado por IA sob condições críticas de processo. [cite_start]O sistema suspende temporariamente o avanço automático da operação e exige validação manual obrigatória em campo: protocolo de bloqueio mecânico/elétrico (**LOTO**), teste de ausência de tensão e assinatura de **APR** (Análise Preliminar de Risco)[cite: 16].
+* **Segurança e Intervencionismo Humano (NR-10 & ISA-99):** Interlock de segurança ativado por IA sob condições críticas de processo. O sistema suspende temporariamente o avanço automático da operação e exige validação manual obrigatória em campo: protocolo de bloqueio mecânico/elétrico (**LOTO**), teste de ausência de tensão e assinatura de **APR** (Análise Preliminar de Risco).
 * **Arquitetura AGÉTICO ADK:** Utilização de agentes de IA orientados a eventos para monitoramento preditivo e telemetria contínua.
 
 ---
@@ -22,8 +22,8 @@ O projeto está compilado e hospedado nativamente no GitHub Pages. Acesse a inte
 ## 💻 Estrutura do Projeto
 
 O ecossistema está configurado utilizando uma estrutura moderna de Single Page Application (SPA):
-* [cite_start]**`terminal_industrial_sovereignguard.tsx`:** O componente React principal contendo a lógica de estados, renderização dos painéis hierárquicos (L1: Operação, L2: Sinótico, L3: Tendências, L4: Auditoria), cálculo do gráfico radar (*Health Signature*) e gerador de hashes de rastreabilidade[cite: 13, 16, 68].
-* [cite_start]**`main.tsx` & `index.html`:** Ponto de entrada do ecossistema e injeção do motor React, utilizando Tailwind CSS para renderização ágil de componentes planos[cite: 12].
+**`terminal_industrial_sovereignguard.tsx`:** O componente React principal contendo a lógica de estados, renderização dos painéis hierárquicos (L1: Operação, L2: Sinótico, L3: Tendências, L4: Auditoria), cálculo do gráfico radar (*Health Signature*) e gerador de hashes de rastreabilidade.
+**`main.tsx` & `index.html`:** Ponto de entrada do ecossistema e injeção do motor React, utilizando Tailwind CSS para renderização ágil de componentes planos.
 * **`vite.config.js`:** Configuração do empacotador Vite estabelecendo a base path para distribuição correta de subdiretórios no GitHub Pages.
 * **`.github/workflows/deploy.yml`:** Pipeline de CI/CD em automação contínua configurado sob **Node.js 24**, realizando o *build* produtivo e a entrega automatizada na nuvem do GitHub Actions.
 
